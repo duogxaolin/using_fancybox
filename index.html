@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sử dụng FancyBox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</head>
+<body>
+    <h1>Ảnh</h1>
+    <div class="image-gallery">
+        <a data-fancybox="gallery" href="path/to/your/image1.jpg">
+            <img src="https://i.imgur.com/AhbVUFX.png" alt="Image 1" />
+        </a>
+        <a data-fancybox="gallery" href="path/to/your/image2.jpg">
+            <img src="https://i.imgur.com/AhbVUFX.png" alt="Image 2" />
+        </a>
+        <a data-fancybox="gallery" href="path/to/your/image3.jpg">
+            <img src="https://i.imgur.com/AhbVUFX.png" alt="Image 3" />
+        </a>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-fancybox="gallery"]').fancybox();
+        });
+    </script>
+</body>
+</html>
